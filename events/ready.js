@@ -71,7 +71,7 @@ module.exports = class {
             const embed = channel.buildEmbed()
                 .setColor(online.length < 3 ? "RED" : "GREEN")
                 .setAuthor("Node Report")
-                .setDescription(`${offline.length === 0 ? "No" : offline.length} node${offline.length === 1 ? "" : "s"} offline.`);
+                .setDescription(`${offline.length === 0 ? `All nodes online!` : `${offline.length} node${offline.length === 1 ? "" : "s"} offline`}`);
 
             list.map(data => embed.addField(`Node ${data.node}`, `${data.online ? `Online with ${data.players === 0 ? "no" : data.players} player${data.players === 1 ? "" : "s"}` : `Offline for ${ms(Date.now() - data.updated, { verbose: true, secDecimalDigits: 0 })}`}`));
 

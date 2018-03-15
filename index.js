@@ -8,6 +8,7 @@ require("./util/extenders");
 // fetchAllMembers: true, disableEveryone: true, disabledEvents: ["USER_UPDATE", "TYPING_START"]
 const client = new Client({ 
     ...config.clientOptions,
+    disableEveryone: true,
     config,
     guild: config.guild,
     sql: config.credentials.sql

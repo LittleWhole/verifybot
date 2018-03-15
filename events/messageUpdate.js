@@ -25,6 +25,9 @@ module.exports = class {
 
         if (newMessage.author.bot && action.action === "Message Edited") return;
 
+        // If message was sent in a channel that mods can't view, ignore it
+        if (!newMessage.guild.roles.find("name", "Moderator").permissionsIn(newMessage.channel).has("VIEW_CHANNEL")) return;
+
         // Create an embed
         const embed = logs.buildEmbed()
             .setColor(action.color)

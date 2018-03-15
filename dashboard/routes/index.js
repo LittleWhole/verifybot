@@ -66,7 +66,7 @@ router.get("/", (req, res, next) => {
     const perms = await client.permLevel(req.user.id);
 
     // If user is verified, tell them that they are already verified
-    if (perms.level >= 1) {
+    if (perms.level === 1) {
         return res.render(`${templateDir}/index.ejs`, {
             client,
             user: req.user,
@@ -239,7 +239,7 @@ router.get("/confirm", checkAuth, async (req, res) => {
     });
 
     // Get the channel
-    const channel = client.channels.find("name", "verification");
+    const channel = client.channels.find("name", client.config.channels.verification);
     // If not channel, return
     if (!channel) return;
 
