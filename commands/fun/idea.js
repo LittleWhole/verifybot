@@ -34,12 +34,44 @@ module.exports = class Meow extends Base {
                 "A board game",
                 "A mob arena game",
                 "A dropper game",
-                "A spleef game"
+                "A spleef game",
+                "A Mystery game",
+                "A Murder game",
+                "A Bedwars game",
+                "A Skywars game",
+                "A Skyblock game",
+                "A Plot",
+                "A musical game",
+                "A art game",
+                "A Arena game"
+                
             ]
         });
         
         Object.defineProperty(this, "gameObjective", {
             value: [
+                "where you parkour",
+                "in which you try to fly",
+                "in which you try to run",
+                "in which you try to be free",
+                "in which you search real love",
+                "in which you want to get rich",
+                "in which try to survive",
+                "in which you battle players",
+                "in which you kill mobs",
+                "in which you farm DFC",
+                "in which you farm CP",
+                "in which you build a farm",
+                "in which a meteor crashes into the earth",
+                "in which a apocalypse breaks out",
+                "in which you hunt a criminal",
+                "in which you are making memes",
+                "in which you spam !idea, hoping for something good",
+                "in which you spam !idea, but there is nothing good",
+                "in which you break the 4th wall",
+                "in which you create music",
+                "in which you hear music",
+                "where you parkour",
                 "where you parkour",
                 "where you escape",
                 "where you run",
@@ -112,6 +144,20 @@ module.exports = class Meow extends Base {
                 "to be hated.",
                 "to lose points.",
                 "to be a meme.",
+                "to be cool.",
+                "to be a cool kid.",
+                "to be a cool cat.",
+                "to be a cool cat fan.",
+                "so cool cat can save the kids.",
+                "so ottelino can tell you he loves making !idea stuff",
+                "to get jrhelper.",
+                "to achieve absolutely nothing.",
+                "to dance",
+                "to win a golden mario trophy.",
+                "to finish this game.",
+                "to notice it was all just a prank",
+                "to notice it was all just a social experiment.",
+                "to notice that the gane has no ending.",
                 "to win free overlord."
             ]
         });
